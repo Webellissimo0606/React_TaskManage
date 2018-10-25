@@ -25,8 +25,6 @@ class SingleProject extends Component {
     const projectId = this.props.match.params.id
 
     axios.get(`/api/projects/${projectId}`).then(response => {
-      console.log(response.data)
-      console.log(response.tasks)
       this.setState({
         project: response.data,
         tasks: response.data.tasks
@@ -84,7 +82,6 @@ class SingleProject extends Component {
 
   handleMarkProjectAsCompleted () {
     const { history } = this.props
-    console.log(history);
 
     axios
       .put(`/api/projects/${this.state.project.id}`)
@@ -94,10 +91,12 @@ class SingleProject extends Component {
   handleMarkTaskAsCompleted (taskId) {
     axios.put(`/api/tasks/${taskId}`).then(response => {
       this.setState(prevState => ({
-        tasks: prevState.tasks.filter(task => {
+        tasks: prevState.tasks.filter(task => { 
           return task.id !== taskId
         })
+        
       }))
+      console.log(this.state.tasks)
     })
   }
 

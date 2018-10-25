@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5bca48e56bbf3a25645858fcab9c285",
+    "content-hash": "7aafc34996046eaa7e13b8a2f0380446",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1264,6 +1264,52 @@
                 "uuid"
             ],
             "time": "2018-01-20T00:28:24+00:00"
+        },
+        {
+            "name": "silviolleite/laravelpwa",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silviolleite/laravel-pwa.git",
+                "reference": "76b2a9c8e74f1617766ea9934286c26ec157bb8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silviolleite/laravel-pwa/zipball/76b2a9c8e74f1617766ea9934286c26ec157bb8d",
+                "reference": "76b2a9c8e74f1617766ea9934286c26ec157bb8d",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelPWA\\Providers\\LaravelPWAServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelPWA\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Silvio Luis Leite",
+                    "email": "silviolleite@gmail.com"
+                }
+            ],
+            "description": "Looks like an app, feels like an app, but NOT an app.",
+            "keywords": [
+                "laravel",
+                "php",
+                "progressive web apps",
+                "pwa"
+            ],
+            "time": "2018-08-24T00:04:03+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
